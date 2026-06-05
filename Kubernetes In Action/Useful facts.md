@@ -1,0 +1,2 @@
+- Kubernetes waits a while before rescheduling pods, in case the node is unreachable because of a temporary network glitch or because the Kubelet is restarting. If the node stays unreachable for several minutes, then the stat
+- You can use `--cascade=orphan` to delete a controller while leaving its pods running.

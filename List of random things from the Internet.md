@@ -1,0 +1,12 @@
+- https://www.youtube.com/watch?v=om2lIWXLLN4&t=3s
+- https://www.darioamodei.com/essay/the-adolescence-of-technology
+- https://www.youtube.com/watch?v=EV7WhVT270Q&pp=0gcJCYcKAYcqIYzv
+- https://www.youtube.com/watch?v=mK2h9VPRgnI&t=25s
+- https://press.asimov.com/articles/scent
+- https://shumer.dev/something-big-is-happening?utm_source=tldrnewsletter
+- https://www.youtube.com/watch?v=VsvrJENks2s
+- https://cybernews-node.blogspot.com/2026/02/bcis-in-2026-still-janky-still.html?utm_source=tldrnewsletter
+- https://www.youtube.com/watch?v=PQU9o_5rHC4
+- https://www.youtube.com/watch?v=0-LAT4HjWPo
+- https://www.youtube.com/watch?v=jlR3mXlznwI
+- https://www.youtube.com/watch?v=dFT4xj57D7U

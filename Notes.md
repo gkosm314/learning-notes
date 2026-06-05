@@ -1,0 +1,2 @@
+- Read everything first with highlighting and then do a second pass to create notes.
+- Use copy-pasting for the notes. You can take advantage of highlighting for this.

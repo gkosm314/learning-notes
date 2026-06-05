@@ -1,0 +1,36 @@
+- For every command the `--help` option provides more than you figure out whatever you need.
+---
+## Basic commands 
+- **kubectl get \<resource\> (\<resource-name\>)**  to get the YAML manifest of a resource in the cluster
+	- `kubectl get pods` - to get a list of all the pods
+	- `kubectl get pods kubia-manual -o yaml` - to get the manifest of pod
+	- `kubectl get pods --show-labels` - to show all the labels
+	- `kubectl get pods --L <labels-list>` - to specific labels in their own columns
+- **kubectl get** with labels
+	- `kubectl get po -l env`
+	- `kubectl get po -l env in (prod, dev)`
+	- `kubectl get po -l env notin (prod, dev)`
+	- `kubectl get po -l creation_method=manual`
+	- `kubectl get po -l creation_method!=manual`
+- **kubectl delete pod (\<resource-name\>)**  to delete specific pod
+	- `kubectl delete po kubia-gpu` - deletes pod named `kubia-cpu`
+	- `kubectl delete po -l env!=prod` - deletes all pods with label `env != prod`
+	- `kubectl delete ns custom-namespace` - delete whole namespace (and all its pods)
+- **kubectl logs (\<resource-name\>)** to get the logs of a pod
+	- `kubectl logs kubia-manual` - for single-container log
+	- `kubectl logs kubia-manual -c my-container` - for multi-container log
+	- equivalent to SSH in the pod + `docker logs ...` for the container
+- **kubectl port-forward \<resource\>** to forward local port to resource's pod
+	- `**kubectl port-forward kubia-manual 8888:8080**` - local 8888 to pod's 8080
+	- `**curl localhost:8888**` will hit the pod instead
+---
+- **kubectl create -f \<file-path\>** to create a resource based on a manifest
+	- `kubectl create -f kuubia-manual.yaml
+- **kubectl explain \<resource\>** to discover possible API fields
+	- `kubectl explain pods`
+	- `kubectl explain pod.spec` - to dig deeper
+- **kubectl label \<resource\> \<resource-name\>** to set label
+	- `kubectl label po kubia-manual-v2 env=debug --overwrite`
+## On-call notes
+- You can see why the container had to be restarted by looking at what `kubectl describe` prints out.
+	- check events, `Last State`, `Exit Code` (under `Last State`) (128+X, where X the signal that killed the container)

@@ -1,0 +1,37 @@
+- Modes
+	- Normal/Insert/Visual/Command
+	- **i** gets you to insert mode
+		- I gets you to insert mode and moves you to the beginning of the line
+	- **a** gets you to insert mode and moves cursor one front
+		- A gets you to insert mode and moves you to the beginning of the line
+	- o gets you to insert mode and adds a new line
+		- O gets you to insert mode and adds a new line above
+		- 
+	- **v** visual mode (similar to using the mouse to highlight)
+		- **shift+v** visual line
+- Motions
+	- **h/j/k/l** move around
+	- **w** move to next word
+	- f + char: goes to the first occurence of the character
+	- t + char: goes just before the first occurence of the character
+		- ; to go to next one, , to go backwards
+	- $: go to end of line
+	- {,}: go up/down paragraph
+	- zz - control view
+	- gg: go to top
+	- G: go to bottom
+	- :N - go to specific line
+	- / for search, n/N to search next/previous, * to search the whole word
+	- ctrl+u/ctrl+d for half-page
+- Commands
+	- **d** - delete
+	- **u** - undo
+	- **ctrl+r** - redo
+	- **y** - yank (copy!)
+	- p - paste
+---
+(*command*)(*count*)(*motion*)
+- examples
+	- d3j = delete current lines + 3 beloew
+	- dw = delete word
+	- d2w = delete 2 words

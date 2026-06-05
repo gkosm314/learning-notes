@@ -1,0 +1,11 @@
+- What is the difference between YAML descriptor and resource definition?
+- How do the Linux namespaces work exactly?
+- How does K8S port-forwarding work in detail?
+- Where does Docker redirect the stdout/stderr? To a regular file?
+- Who rotates the container's logs? Docker or K8S?
+- Are the logs removed when the pod dies because they are just files in the container's FS? Or files in the pod's FS? Is there such a thing such as a pod's FS?
+- How is DNS implemented in the context of kubernetes?
+- What else could we do to solve the problem that Services solve, other than introducing a resource?
+- What happens to the pods that have the information for a service in their environment variables, if I delete said service?
+- How does the load balancer service work?
+- Where do services live? Do they live in kubelets?
